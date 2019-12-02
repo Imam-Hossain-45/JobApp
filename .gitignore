@@ -1,0 +1,6 @@
+beehive/.env
+__pycache__
+/env
+/venv
+/.idea
+/.vscode
