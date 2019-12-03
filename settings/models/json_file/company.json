@@ -1,0 +1,290 @@
+[
+  {"name":"companies","data":
+    [
+      {
+        "id":"1","short_name":"THERAP","name":"Therap Ltd",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"2","short_name":"GGL","name":"Google",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"3","short_name":"CPX","name":"Cimplux",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"4","short_name":"NWC","name":"Newscreed",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"5","short_name":"BITS","name":"BracIT",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"6","short_name":"FB","name":"Facebook",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"7","short_name":"UB","name":"Uber",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"8","short_name":"PTH","name":"Pathao",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"9","short_name":"SBD","name":"Shabd Visuals",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"10","short_name":"PNSH","name":"Ponnoshala",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"11","short_name":"ANT","name":"Ant Ceramics",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"12","short_name":"SGK","name":"ShorGol Kitchen",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"13","short_name":"SNT","name":"Shanta",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"14","short_name":"TYT","name":"Toyota",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"15","short_name":"DMS","name":"Domino's",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"16","short_name":"BGK","name":"Burger King",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"17","short_name":"PZT","name":"Pizza Hut",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"18","short_name":"BRACU","name":"Brac University",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"19","short_name":"NSU","name":"North South University",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"20","short_name":"AIUB","name":"AIUB",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"21","short_name":"GMT","name":"Khan Garments",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"22","short_name":"HHT","name":"Hossain Shop",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"23","short_name":"AJH","name":"Annahjah",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"24","short_name":"YLN","name":"Yalin",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"25","short_name":"DBBL","name":"DBBL",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"26","short_name":"RUPBNK","name":"Rupali Bank",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"27","short_name":"ASUS","name":"Asus",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"28","short_name":"ASA","name":"ASA",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"29","short_name":"BTCL","name":"British Council",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"30","short_name":"PASTA","name":"Pasta State",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"31","short_name":"BTT","name":"British Tobacco",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      }
+    ]
+  }
+  ,
+  {"name":"company_physical_addresses","data":
+    [
+      {
+        "id":"1","company_id":"1","address_line_1":"32, banani house market","address_line_2":"bazar gate",
+        "country_id":"18","state_id":"348","city_id":"491","area":"Banani","postal_code":"1212",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"2","company_id":"2","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"3","company_id":"3","address_line_1":"32, banani house market","address_line_2":"bazar gate",
+        "country_id":"18","state_id":"348","city_id":"491","area":"Banani","postal_code":"1212",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"4","company_id":"4","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"5","company_id":"5","address_line_1":"32, banani house market","address_line_2":"bazar gate",
+        "country_id":"18","state_id":"348","city_id":"491","area":"Banani","postal_code":"1212",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"6","company_id":"6","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"7","company_id":"7","address_line_1":"32, banani house market","address_line_2":"bazar gate",
+        "country_id":"18","state_id":"348","city_id":"491","area":"Banani","postal_code":"1212",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"8","company_id":"8","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"9","company_id":"9","address_line_1":"32, banani house market","address_line_2":"bazar gate",
+        "country_id":"18","state_id":"348","city_id":"491","area":"Banani","postal_code":"1212",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"10","company_id":"10","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"11","company_id":"11","address_line_1":"32, banani house market","address_line_2":"bazar gate",
+        "country_id":"18","state_id":"348","city_id":"491","area":"Banani","postal_code":"1212",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"12","company_id":"12","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"13","company_id":"13","address_line_1":"32, banani house market","address_line_2":"bazar gate",
+        "country_id":"18","state_id":"348","city_id":"491","area":"Banani","postal_code":"1212",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"14","company_id":"14","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"15","company_id":"15","address_line_1":"32, banani house market","address_line_2":"bazar gate",
+        "country_id":"18","state_id":"348","city_id":"491","area":"Banani","postal_code":"1212",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"16","company_id":"16","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"17","company_id":"17","address_line_1":"32, banani house market","address_line_2":"bazar gate",
+        "country_id":"18","state_id":"348","city_id":"491","area":"Banani","postal_code":"1212",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"18","company_id":"18","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"19","company_id":"19","address_line_1":"32, banani house market","address_line_2":"bazar gate",
+        "country_id":"18","state_id":"348","city_id":"491","area":"Banani","postal_code":"1212",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"20","company_id":"20","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"21","company_id":"21","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"22","company_id":"22","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"23","company_id":"23","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"24","company_id":"24","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"25","company_id":"25","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"26","company_id":"26","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"27","company_id":"27","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"28","company_id":"28","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"29","company_id":"29","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"30","company_id":"30","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"31","company_id":"31","address_line_1":"brooklyn street 4","address_line_2":"brooklyn street 4A",
+        "country_id":"231","state_id":"3919","city_id":"42594","area":"brooklyn","postal_code":"9000",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      }
+    ]
+  }
+]
