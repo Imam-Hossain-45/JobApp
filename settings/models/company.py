@@ -1,9 +1,17 @@
 from django.db import models
 from helpers.models import Model
 
-STATUS_CHOICES = (
-    ('active', 'Active'),
-    ('inactive', 'Inactive')
+JOB_TYPE_CHOICES = (
+    ('none', ''),
+    ('software-developer', 'Software Developer'),
+    ('banker', 'Banker'),
+    ('business-development', 'Business Development'),
+    ('android', 'Android'),
+    ('web', 'Web Design'),
+    ('ui-ux', 'UI/UX'),
+    ('teaching', 'Teaching'),
+    ('training', 'Training'),
+    ('garments', 'Garments'),
 )
 
 
@@ -47,11 +55,7 @@ class Company(Model):
     ownership_type = models.CharField(max_length=20, choices=OWNERSHIP_TYPE_CHOICE)
     establishment_date = models.DateField(blank=True, null=True)
     description = models.TextField(blank=True, null=True)
-    status = models.CharField(
-        max_length=20,
-        choices=STATUS_CHOICES,
-        default='active'
-    )
+    status = models.BooleanField(default=True, blank=True)
     company_start_date = models.DateField(blank=True, null=True)
     company_end_date = models.DateField(blank=True, null=True)
 
@@ -73,10 +77,16 @@ class CompanyPhysicalAddress(Model):
     area = models.CharField(max_length=255, blank=True, null=True)
     postal_code = models.CharField(max_length=255, blank=True, null=True)
     description = models.TextField(blank=True, null=True)
-    status = models.CharField(
-        max_length=20,
-        choices=STATUS_CHOICES,
-        default='active'
-    )
+    status = models.BooleanField(default=True, blank=True)
     address_start_date = models.DateField(blank=True, null=True)
     address_end_date = models.DateField(blank=True, null=True)
+
+
+class CompanyJobOffer(Model):
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, blank=True, null=True)
+    job_type = models.CharField(
+        max_length=255,
+        choices=JOB_TYPE_CHOICES,
+        default='none'
+    )
+    status = models.BooleanField(default=True, blank=True)

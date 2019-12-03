@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import (
     AbstractBaseUser, BaseUserManager, PermissionsMixin, Group
 )
+from helpers.models import Model
 
 
 class UserManager(BaseUserManager):
@@ -47,12 +48,8 @@ class UserManager(BaseUserManager):
 class User(AbstractBaseUser, PermissionsMixin):
     name = models.CharField(max_length=255, blank=True, null=True)
     email = models.EmailField(max_length=255, unique=True)
-
     is_staff = models.BooleanField(default=False, blank=True)
-    status = models.CharField(max_length=10, blank=True, choices=(
-        ('active', 'Active'),
-        ('inactive', 'Inactive')
-    ), default='active')
+    status = models.BooleanField(default=True, blank=True)
     created_at = models.DateTimeField(blank=True, auto_now_add=True)
     updated_at = models.DateTimeField(blank=True, auto_now=True)
 
@@ -62,3 +59,17 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return "%s" % self.name
+
+
+class UserProfile(Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
+    date_of_birth = models.DateTimeField(blank=True, null=True)
+    phone = models.CharField(max_length=20, blank=True, null=True, unique=True)
+    country = models.ForeignKey('settings.Country', on_delete=models.SET_NULL, null=True, blank=True)
+    state = models.ForeignKey('settings.State', on_delete=models.SET_NULL, blank=True, null=True)
+    city = models.ForeignKey('settings.City', on_delete=models.SET_NULL, blank=True, null=True)
+    zip_code = models.IntegerField(blank=True, null=True)
+    address_line1 = models.TextField(max_length=255, blank=True, null=True)
+    address_line2 = models.TextField(max_length=255, blank=True, null=True)
+    # job_preferences = models.ForeignKey()
+

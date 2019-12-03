@@ -286,5 +286,193 @@
         "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
       }
     ]
+  },
+  {"name":"company_job_offers","data":
+    [
+      {
+        "id":"1","company_id":"1","job_type":"software-developer",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"2","company_id":"2","job_type":"banker",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"3","company_id":"3","job_type":"business-development",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"4","company_id":"3","job_type":"business-development",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"5","company_id":"4","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"6","company_id":"5","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"7","company_id":"2","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"8","company_id":"6","job_type":"web",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"9","company_id":"7","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"10","company_id":"8","job_type":"web",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"11","company_id":"9","job_type":"web",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"12","company_id":"10","job_type":"ui-ux",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"13","company_id":"10","job_type":"ui-ux",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"14","company_id":"11","job_type":"ui-ux",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"15","company_id":"12","job_type":"ui-ux",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"16","company_id":"13","job_type":"teaching",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"17","company_id":"10","job_type":"training",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"18","company_id":"14","job_type":"training",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"19","company_id":"15","job_type":"training",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"20","company_id":"16","job_type":"training",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"21","company_id":"17","job_type":"training",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"22","company_id":"18","job_type":"training",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"23","company_id":"19","job_type":"garments",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"24","company_id":"19","job_type":"banker",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"25","company_id":"20","job_type":"garments",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"26","company_id":"21","job_type":"garments",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"27","company_id":"22","job_type":"banker",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"28","company_id":"22","job_type":"teaching",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"29","company_id":"23","job_type":"banker",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"30","company_id":"24","job_type":"teaching",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"31","company_id":"25","job_type":"teaching",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"32","company_id":"26","job_type":"teaching",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"33","company_id":"27","job_type":"teaching",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"34","company_id":"28","job_type":"teaching",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"35","company_id":"29","job_type":"teaching",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"36","company_id":"30","job_type":"teaching",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"37","company_id":"31","job_type":"teaching",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"38","company_id":"23","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"39","company_id":"24","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"40","company_id":"25","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"41","company_id":"26","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"42","company_id":"27","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"43","company_id":"28","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"44","company_id":"29","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"45","company_id":"30","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      },
+      {
+        "id":"46","company_id":"31","job_type":"android",
+        "created_at":"2019-07-12 12:00:00","updated_at":"2019-07-12 12:00:00"
+      }
+    ]
   }
 ]
