@@ -1,2 +1,10 @@
 {% extends "layouts/master.html" %}
 {% block title_block %}Home{% endblock %}
+
+{% block body_block %}
+{% if user.is_superuser %}
+<p>You are superuser</p>
+{% else %}
+<p>You are normal-user</p>
+{% endif %}
+{% endblock %}

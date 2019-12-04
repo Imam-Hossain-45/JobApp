@@ -1,0 +1,40 @@
+{% extends "layouts/master.html" %}
+{% block title_block %}{{ search_criteria }}{% endblock %}
+
+{% block body_block %}
+{% if not user.is_superuser %}
+<div class="jumbotron text-center">
+    <h3>{{ search_criteria }}</h3>
+</div>
+<div class="container">
+    <div class="jumbotron">
+        <div class="card-block">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="datatable">
+                            <thead>
+                                <tr class="selectable">
+                                    <th scope="col">No.</th>
+                                    <th scope="col">Company</th>
+                                    <th scope="col">Job</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for job in jobs %}
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+                                    <td>{{ job.company }}</td>
+                                    <td>{{ job.job_type }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

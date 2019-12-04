@@ -18,9 +18,12 @@
             <ul class="nav navbar-nav">
                 <li><a class="navbar-brand" href="{% url 'index' %}">JobApp</a></li>
                 <li><a class="navbar-brand" href="{% url 'accounts:logout' %}">Logout</a></li>
+
             </ul>
         </div>
     </nav>
+    {% block body_block %}
+    {% endblock %}
 </body>
 
 </html>
