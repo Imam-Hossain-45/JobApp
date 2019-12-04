@@ -4,6 +4,7 @@ from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError
 from django.contrib.auth import login
 from user_management.forms import UserRegistrationForm
+from user_management.models import UserProfile
 
 
 class UserRegistrationView(FormView):
@@ -38,7 +39,7 @@ class UserRegistrationView(FormView):
 
         user.set_password(user.password)  # to hash the password
         user.save()  # save the new user with information to the database
-        
+        UserProfile.objects.create(user=user)
         login(request, user)
         return redirect('/')
 

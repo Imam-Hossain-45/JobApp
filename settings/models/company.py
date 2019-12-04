@@ -81,6 +81,9 @@ class CompanyPhysicalAddress(Model):
     address_start_date = models.DateField(blank=True, null=True)
     address_end_date = models.DateField(blank=True, null=True)
 
+    def __str__(self):
+        return '{}, {}, {}'.format(self.city, self.state, self.country)
+
 
 class CompanyJobOffer(Model):
     company = models.ForeignKey(Company, on_delete=models.CASCADE, blank=True, null=True)
