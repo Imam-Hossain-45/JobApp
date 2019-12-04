@@ -34,7 +34,7 @@ SECRET_KEY = '27l@j!tbna&0uss9glv97d_yok!g%6td*m!vhz0ywea@vsgvf7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'imamhossain.pythonanywhere.com']
 
 
 # Application definition
