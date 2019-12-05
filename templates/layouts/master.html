@@ -26,7 +26,7 @@
                 <li><a class="navbar-brand" href="{% url 'settings:nearby_jobs_list' %}">Nearby Jobs</a></li>
                 <li><a class="navbar-brand" href="{% url 'settings:preferred_jobs_list' %}">Preferred Jobs</a></li>
                 {% endif %}
-                <li><a class="navbar-brand" href="{% url 'user_management:user_detail' pk=user.id %}">Profile: {{ user.email }}</a></li>
+                <li><a class="navbar-brand" href="{% url 'user_management:user_detail' pk=user.id %}">Profile</a></li>
                 <li><a class="navbar-brand" href="{% url 'accounts:logout' %}">Logout</a></li>
             </ul>
             {% endif %}

@@ -2,6 +2,7 @@
 {% block title %}{{ search_criteria }}{% endblock %}
 
 {% block body_block %}
+{% include 'layouts/event.html' %}
 <div class="jumbotron text-center">
     <h3>{{ search_criteria }}</h3>
     {% if search_criteria == 'Nearby Jobs' and not user.is_superuser %}

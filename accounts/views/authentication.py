@@ -29,10 +29,7 @@ class LogInView(FormView):
 
         if user.is_active:
             login(self.request, user)
-            if 'next' in self.request.POST:
-                return redirect(self.request.POST.get('next'))
-            else:
-                return redirect(reverse_lazy('user_management:user_detail', kwargs={'pk': user.id}))
+            return redirect(reverse_lazy('settings:all_jobs_list'))
 
         messages.error(self.request, 'The user is inactive. Please contact with administrator')
 

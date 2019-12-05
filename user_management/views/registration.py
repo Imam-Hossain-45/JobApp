@@ -6,6 +6,7 @@ from django.contrib.auth import login
 from user_management.forms import UserRegistrationForm
 from user_management.models import UserProfile
 from django.urls import reverse_lazy
+from django.contrib import messages
 
 
 class UserRegistrationView(FormView):
@@ -42,6 +43,7 @@ class UserRegistrationView(FormView):
         user.save()  # save the new user with information to the database
         UserProfile.objects.create(user=user)
         login(request, user)
-        return redirect(reverse_lazy('user_management:user_detail', kwargs={'pk': user.id}))
+        messages.success(request, 'Edit Profile information for better experience')
+        return redirect(reverse_lazy('settings:all_jobs_list'))
 
 
