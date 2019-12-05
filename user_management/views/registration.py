@@ -5,6 +5,7 @@ from django.core.exceptions import ValidationError
 from django.contrib.auth import login
 from user_management.forms import UserRegistrationForm
 from user_management.models import UserProfile
+from django.urls import reverse_lazy
 
 
 class UserRegistrationView(FormView):
@@ -41,6 +42,6 @@ class UserRegistrationView(FormView):
         user.save()  # save the new user with information to the database
         UserProfile.objects.create(user=user)
         login(request, user)
-        return redirect('/')
+        return redirect(reverse_lazy('user_management:user_detail', kwargs={'pk': user.id}))
 
 

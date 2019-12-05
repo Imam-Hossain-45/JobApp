@@ -22,6 +22,9 @@
                 <li><a class="navbar-brand" href="{% url 'user_management:user_list' %}">Members</a></li>
                 {% endif %}
                 <li><a class="navbar-brand" href="{% url 'settings:all_jobs_list' %}">All Jobs</a></li>
+                {% if not user.is_superuser %}
+                <li><a class="navbar-brand" href="{% url 'settings:nearby_jobs_list' %}">Nearby Jobs</a></li>
+                {% endif %}
                 <li><a class="navbar-brand" href="{% url 'user_management:user_detail' pk=user.id %}">Profile: {{ user.email }}</a></li>
                 <li><a class="navbar-brand" href="{% url 'accounts:logout' %}">Logout</a></li>
             </ul>

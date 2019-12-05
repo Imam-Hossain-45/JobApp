@@ -14,7 +14,8 @@
                 <hr>
                 {% if not user.is_superuser %}
                 <h3><b><u>User Profile:</u></b></h3>
-                <a href="{% url 'user_management:user_update' pk=user.id %}">Update Profile</a>
+                <a class="btn btn-info" href="{% url 'user_management:user_update' pk=user.id %}">Update Profile</a>
+                <hr>
                 <ul>
                     <li>Date of Birth: {{ user.userprofile.date_of_birth|default_if_none:'' }}</li>
                     <li>Phone: {{ user.userprofile.phone|default_if_none:'' }}</li>

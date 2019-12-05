@@ -32,7 +32,7 @@ class LogInView(FormView):
             if 'next' in self.request.POST:
                 return redirect(self.request.POST.get('next'))
             else:
-                return redirect(reverse_lazy('index'))
+                return redirect(reverse_lazy('user_management:user_detail', kwargs={'pk': user.id}))
 
         messages.error(self.request, 'The user is inactive. Please contact with administrator')
 
