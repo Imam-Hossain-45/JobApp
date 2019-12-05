@@ -1,11 +1,11 @@
 {% extends "layouts/master.html" %}
-{% block title %}{{ search_criteria }}{% endblock %}
+{% block title %}Users{% endblock %}
 
 {% block body_block %}
+{% if user.is_superuser %}
 <div class="jumbotron text-center">
-    <h3>{{ search_criteria }}</h3>
+    <h3>Users</h3>
 </div>
-
 <div class="container">
     <div class="jumbotron">
         <div class="card-block">
@@ -16,22 +16,19 @@
                             <thead>
                                 <tr class="selectable">
                                     <th scope="col">No.</th>
-                                    <th scope="col">Company</th>
-                                    <th scope="col">Job</th>
-                                    <th scope="col">Company Address</th>
+                                    <th scope="col">Username</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">User Type</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {% for job in jobs %}
+                                {% for member in members %}
                                 <tr>
                                     <td>{{ forloop.counter }}</td>
-                                    <td>{{ job.company }}</td>
-                                    <td>{{ job.job_type }}</td>
+                                    <td>{{ member.name|default_if_none:'' }}</td>
+                                    <td>{{ member.email }}</td>
                                     <td>
-                                        {% for address in job.company.companyphysicaladdress_set.all %}
-                                        {{ address }}
-                                        <br>
-                                        {% endfor %}
+                                        {% if member.is_superuser %}Admin{% else %}User{% endif %}
                                     </td>
                                 </tr>
                                 {% endfor %}
@@ -43,4 +40,5 @@
         </div>
     </div>
 </div>
+{% endif %}
 {% endblock %}

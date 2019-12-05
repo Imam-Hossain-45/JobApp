@@ -3,8 +3,8 @@
 
 {% block body_block %}
 {% if user.is_superuser %}
-<p>You are superuser</p>
+<h2>Admin: Dashboard</h2>
 {% else %}
-<p>You are normal-user</p>
+<h2>User: Dashboard</h2>
 {% endif %}
 {% endblock %}

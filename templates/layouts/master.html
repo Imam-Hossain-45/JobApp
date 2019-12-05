@@ -17,6 +17,9 @@
         <div class="container">
             <ul class="nav navbar-nav">
                 <li><a class="navbar-brand" href="{% url 'index' %}">JobApp</a></li>
+                {% if user.is_authenticated and user.is_superuser %}
+                <li><a class="navbar-brand" href="{% url 'user_management:user_list' %}">Members</a></li>
+                {% endif %}
                 <li><a class="navbar-brand" href="{% url 'settings:all_jobs_list' %}">All Jobs</a></li>
                 <li><a class="navbar-brand" href="{% url 'accounts:logout' %}">Logout</a></li>
             </ul>
