@@ -64,10 +64,10 @@ class User(AbstractBaseUser, PermissionsMixin):
 class UserProfile(Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
     date_of_birth = models.DateTimeField(blank=True, null=True)
-    phone = models.CharField(max_length=20, blank=True, null=True, unique=True)
+    phone = models.CharField(max_length=20, blank=True, null=True)
     country = models.ForeignKey('settings.Country', on_delete=models.SET_NULL, null=True, blank=True)
-    state = models.ForeignKey('settings.State', on_delete=models.SET_NULL, blank=True, null=True)
-    city = models.ForeignKey('settings.City', on_delete=models.SET_NULL, blank=True, null=True)
+    state = models.CharField(max_length=255, blank=True, default='')
+    city = models.CharField(max_length=255, blank=True, default='')
     zip_code = models.IntegerField(blank=True, null=True)
     address_line1 = models.TextField(max_length=255, blank=True, null=True)
     address_line2 = models.TextField(max_length=255, blank=True, null=True)
