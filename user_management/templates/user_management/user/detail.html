@@ -27,6 +27,16 @@
                     <li>Country: {{ user.userprofile.country|default_if_none:'' }}</li>
                 </ul>
                 <hr>
+                <h3><b><u>User Job Preferences:</u></b></h3>
+                <a class="btn btn-info" href="{% url 'user_management:user_job_preference_update' pk=user.id %}">
+                    Update Job Preference
+                </a>
+                <hr>
+                <ul>
+                    {% for job_preference in job_preferences %}
+                    <li>{{ job_preference.get_job_preference_display }}</li>
+                    {% endfor %}
+                </ul>
                 {% endif %}
             </div>
         </div>

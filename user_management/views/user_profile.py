@@ -1,7 +1,7 @@
 from django.views.generic import TemplateView, FormView
 from django.contrib.auth.mixins import LoginRequiredMixin
-from user_management.models import UserProfile
-from user_management.forms import UserProfileUpdateForm
+from user_management.models import User, UserProfile, UserJobPreference
+from user_management.forms import UserProfileUpdateForm, UserJobPreferenceForm
 from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
 
@@ -14,14 +14,19 @@ class UserProfileDetailView(LoginRequiredMixin, TemplateView):
     template_name = 'user_management/user/detail.html'
 
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        if not self.request.user.is_superuser:
+            context['job_preferences'] = UserJobPreference.objects.filter(user=self.request.user)
+        return context
+
+
 class UserProfileUpdateView(LoginRequiredMixin, FormView):
     """
     Update User Profile
     """
     template_name = 'user_management/user/update.html'
     form_class = UserProfileUpdateForm
-    #
-    # success_url = reverse_lazy('user_management:user_detail')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -56,6 +61,49 @@ class UserProfileUpdateView(LoginRequiredMixin, FormView):
         user_profile.city = form.cleaned_data['city']
         user_profile.date_of_birth = form.cleaned_data['date_of_birth']
         user_profile.save()
+
+        return redirect(reverse_lazy('user_management:user_detail', kwargs={'pk': kwargs.get('pk', '')}))
+
+
+class UserJobPreferenceUpdateView(LoginRequiredMixin, FormView):
+    """
+    Update User Job Preference
+    """
+    template_name = 'user_management/user/job_preference.html'
+    form_class = UserJobPreferenceForm
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['selected'] = UserJobPreference.objects.filter(user=self.request.user)
+        print(context['selected'])
+        context['form'] = self.form_class()
+        return context
+
+    def post(self, request, *args, **kwargs):
+        context = super().get_context_data(**kwargs)
+        form = UserJobPreferenceForm(request.POST)
+        context['form'] = form
+
+        if not form.is_valid():
+            context['selected'] = UserJobPreference.objects.filter(user=self.request.user)
+            return render(request, self.template_name, context)
+
+        for i, component in enumerate(request.POST.getlist('job_type')):
+            UserJobPreference.objects.update_or_create(
+                user=self.request.user,
+                job_preference=component
+            )
+
+        selected_list = request.POST.getlist('job_type')
+        user_preferences = UserJobPreference.objects.filter(user=self.request.user)
+        if user_preferences.exists():
+            for member in user_preferences:
+                selected = False
+                for sel in selected_list:
+                    if sel == member.job_preference:
+                        selected = True
+                if not selected:
+                    member.delete()
 
         return redirect(reverse_lazy('user_management:user_detail', kwargs={'pk': kwargs.get('pk', '')}))
 
