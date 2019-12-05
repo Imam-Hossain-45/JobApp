@@ -7,6 +7,9 @@
     <h3>{{ search_criteria }}</h3>
     {% if search_criteria == 'Nearby Jobs' and not user.is_superuser %}
     <hr>
+    {% if system_message %}
+    <p>{{ system_message }}</p>
+    {% endif %}
     <div class="container">
         <div class="jumbotron">
             <div class="card-block">
@@ -55,6 +58,9 @@
 
     {% if search_criteria == 'Preferred Jobs' and not user.is_superuser %}
     <hr>
+    {% if system_message %}
+    <p>{{ system_message }}</p>
+    {% endif %}
     <div class="container">
         <div class="jumbotron">
             <div class="card-block">

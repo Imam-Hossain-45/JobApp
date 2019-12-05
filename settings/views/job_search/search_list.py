@@ -33,11 +33,14 @@ class NearbyJobList(LoginRequiredMixin, TemplateView):
         if not self.request.user.is_superuser:
             context['form'] = JobSearchByLocationForm()
             context['search_criteria'] = 'Nearby Jobs'
+            print(self.request.user.userprofile.state, type(self.request.user.userprofile.state))
             if self.request.user.userprofile.state:
                 context['jobs'] = \
                     CompanyJobOffer.objects.filter(
                         company__companyphysicaladdress__state__name=self.request.user.userprofile.state
                     )
+            else:
+                context['system_message'] = '** Add state info in your profile first **'
         return context
 
     def post(self, request, *args, **kwargs):
@@ -56,13 +59,17 @@ class NearbyJobList(LoginRequiredMixin, TemplateView):
                     CompanyJobOffer.objects.filter(
                         company__companyphysicaladdress__country=self.request.user.userprofile.country
                     )
+            else:
+                context['system_message'] = '** Add country info in your profile first **'
 
         elif search_by == 'state':
-            if self.request.user.userprofile.country:
+            if self.request.user.userprofile.state:
                 context['jobs'] = \
                     CompanyJobOffer.objects.filter(
                         company__companyphysicaladdress__state__name=self.request.user.userprofile.state
                     )
+            else:
+                context['system_message'] = '** Add state info in your profile first **'
 
         elif search_by == 'city':
             if self.request.user.userprofile.city:
@@ -70,6 +77,8 @@ class NearbyJobList(LoginRequiredMixin, TemplateView):
                     CompanyJobOffer.objects.filter(
                         company__companyphysicaladdress__city__name=self.request.user.userprofile.city
                     )
+            else:
+                context['system_message'] = '** Add city info in your profile first **'
 
         return render(request, self.template_name, context)
 
@@ -93,7 +102,8 @@ class PreferredJobList(LoginRequiredMixin, TemplateView):
                 if company_job_offers.exists():
                     for company_job_offer in company_job_offers:
                         jobs.append(company_job_offer)
-
+            if not jobs.__len__() > 0:
+                context['system_message'] = '** Add job preference in profile **'
             context['jobs'] = jobs
         return context
 
@@ -116,6 +126,8 @@ class PreferredJobList(LoginRequiredMixin, TemplateView):
                 if company_job_offers.exists():
                     for company_job_offer in company_job_offers:
                         jobs.append(company_job_offer)
+            if not jobs.__len__() > 0:
+                context['system_message'] = '** Add job preference in profile **'
             context['jobs'] = jobs
 
         else:
